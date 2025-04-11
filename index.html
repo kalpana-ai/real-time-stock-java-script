@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Stock Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Real-Time Stock Tracker</h1>
+
+    <div class="input-group">
+      <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)" />
+      <button onclick="addStock()">Add Stock</button>
+    </div>
+
+    <div id="stockList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

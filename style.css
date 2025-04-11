@@ -1,0 +1,195 @@
+/* Futuristic Bluish Theme + Meta Styling - Full Width with Equal Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0f1624, #1a1f2b);
+    color: #b2cfff;
+    min-height: 100vh;
+    padding: 30px 50px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    background: rgba(20, 25, 35, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.25);
+    padding: 40px 60px;
+    animation: fadeIn 1s ease-out;
+    border: 1px solid rgba(0, 153, 255, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    color: #66ccff;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px #0099ff99;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  #stockSymbol {
+    padding: 14px 22px;
+    font-size: 1em;
+    border: 1px solid #3399ff;
+    border-radius: 8px;
+    width: 300px;
+    background: #101828;
+    color: #b2cfff;
+    transition: 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.2);
+  }
+  
+  #stockSymbol:focus {
+    outline: none;
+    border-color: #66ccff;
+    box-shadow: 0 0 10px #66ccffaa;
+  }
+  
+  button {
+    padding: 14px 28px;
+    font-size: 1em;
+    border: 1px solid #0099ff;
+    border-radius: 8px;
+    background: linear-gradient(to right, #007BFF, #00c6ff);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #00c6ff, #007BFF);
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #0099ffcc;
+  }
+  
+  .stock-container {
+    background: #1a1f2e;
+    border-radius: 12px;
+    padding: 25px 40px;
+    margin: 30px 0;
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.1);
+    transition: 0.3s ease;
+    animation: slideIn 0.5s ease-out;
+    border: 1px solid #0066ff33;
+    text-align: left;
+  }
+  
+  .stock-container h3 {
+    color: #b2e0ff;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 6px #3399ff;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .stock-container h3::after {
+    content: '';
+    font-size: 0.7em;
+    background: #00bfff22;
+    color: #33ccff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+  
+  .stock-container p {
+    color: #9bbcf7;
+    margin: 8px 0;
+    font-size: 1.1em;
+  }
+  
+  .price-block {
+    background: #0f192a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #0050b3;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.15);
+    margin: 10px 0;
+    width: fit-content;
+  }
+  
+  .price {
+    font-size: 1.6em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: #99d0ff;
+  }
+  
+  .price-up {
+    color: #66ffcc;
+    animation: priceChange 0.4s ease-in-out;
+  }
+  
+  .price-down {
+    color: #ff4c4c;
+    animation: priceChange 0.4s ease-in-out;
+  }
+  
+  button.remove-button {
+    margin-top: 15px;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #ff4c4c;
+    color: #ff4c4c;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+  }
+  
+  button.remove-button:hover {
+    background: #ff4c4c;
+    color: #fff;
+    box-shadow: 0 0 10px #ff4c4c;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes priceChange {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+  
